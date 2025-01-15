@@ -61,7 +61,7 @@ jobs:
                   branch: gh-pages
                   folder: _site
                   clean-exclude: |
-                    # previews/*
+                    previews/*
 
             - name: Deploy PR preview
               if: github.event_name == 'pull_request' && github.repository == github.event.pull_request.head.repo.full_name # if this build is a PR build and the PR is NOT from a fork
